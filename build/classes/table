@@ -1,0 +1,27 @@
+--오라클 테이블
+--회원테이블
+CREATE TABLE user_test (
+    id VARCHAR2(30) not null,
+    pw VARCHAR2(30) not null,
+    name VARCHAR2(30) not null,
+    phone VARCHAR2(30),
+    email VARCHAR2(30),
+    address_basic VARCHAR2(100), --기본주소
+    address_detail VARCHAR2(100), --상세주소
+    regdate DATE DEFAULT sysdate
+);
+ALTER TABLE users add CONSTRAINT users_pk PRIMARY KEY (id)
+
+
+--게시글 테이블
+CREATE TABLE board_test (
+    bno NUMBER(10,0) not null,
+    writer VARCHAR2(25) not null,
+    title VARCHAR2(300) not null,
+    content VARCHAR2(2000),
+    ragdate DATE DEFAULT SYSDATE
+);
+
+alter table board_test add constraint board_test_pk PRIMARY KEY (bno);
+
+CREATE SEQUENCE board_test_seq START with 1 INCREMENT by 1 NOCACHE;

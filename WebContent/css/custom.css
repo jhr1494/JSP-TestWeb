@@ -1,0 +1,209 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hanna.css');
+
+* {
+    font-family: 'Jua';
+}
+/* 바디 백그라운드*/
+body {
+    background-image: url(../images/bbs.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+h1 {
+    font-family: 'Hanna';
+}
+
+#nav {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+/* 상단바 브랜드 */
+.navbar-default .navbar-brand {
+    color: dodgerblue
+}
+
+#nav .navbar-brand.active, #nav .navbar-brand:active, #nav .navbar-brand:focus,
+	#nav .navbar-brand:hover {
+	color: darkblue;
+}
+
+.navbar-default .navbar-brand a:hover {
+    color: darkblue
+}
+
+/* 상단바 메뉴 */
+.navbar-default .navbar-nav > li > a {
+    color: cornflowerblue
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: darkorchid
+}
+
+/* 메인소개란 */
+.introArea p {
+    text-align: right;
+}
+.jumbotron {
+    padding: 100px 60px;
+}
+
+
+#bs-example-navbar-collapse-1 {
+    margin-left: 5%
+}
+
+#mainCon {
+    margin-top: 10%
+}
+
+#jbDiv {
+    background: linear-gradient(rgba(204, 92, 80, 0.5), rgba(119, 133, 204, 0.7))
+}
+
+#introArea {
+    text-align: center;
+    color: azure
+}
+
+#btMin {
+    padding-top: 5%
+}
+
+#feMin p, #feMin a {
+    font-size: 20px;
+    color: aquamarine
+}
+
+section {
+    padding-bottom: 250px;
+}
+
+
+
+/* 푸터 */
+footer {
+ 
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 
+}
+footer a {
+    font-size: 13px;
+    color: aquamarine
+}
+/* 카피라이터 */
+.copyright {
+    margin:0 auto;
+    background-color: #1a252f;
+    color: #54e1e4;
+}
+.text-white {
+    color: #fff!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.py-4 {
+    padding-bottom: 1.1rem!important;
+}
+.py-4 {
+    padding-top: 1.1rem!important;
+}
+
+footer .bounceIn {
+    padding: 40px 0px;
+}
+/*게시판 디자인 */
+
+            .table-striped > tbody > tr {
+                background-color: #f9f9f9
+            }
+            
+            .join-form {
+                margin: 0 auto;
+                float: none;
+                background: white;
+                padding: 30px 30px;
+            }
+            
+            .input-group-addon  {
+                padding: 0;
+                border: none; /*윤곽 모두 0*/
+            }
+            
+            .input-group-addon button {
+                border-radius: 0px;
+            }
+            
+            .form-group .form-control {
+                resize: vertical;
+            }
+/*회원가입 폼 */
+
+/*회원정보 폼 */
+        .join-wrap {
+            background-color: white;
+        }
+        
+        .join-form{
+            margin: 0 auto; 
+            float: none; /*플롯을 해제한다. 가운대정렬이 들어간다*/
+        }
+        .join-form form {
+            border-radius: 8px; /*윤곽 8*/
+            padding: 15px; /*모든 패딩 15*/
+            /*박스 쉐도우: 그림자가 가로로떨어진간격, 세로로떨어진 간격, 흐릿정도, 그림자색상*/
+            box-shadow:  0px 8px 16px rgba(0, 0, 0, 0)
+        }
+
+	.titlebox {
+	    width: 250px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            margin: 70px auto;
+            border-top: 1px solid #E1E1E1;
+            border-bottom: 1px solid #E1E1E1;
+        }
+        .m-control .m-title {
+            min-width: 100px;/*화면줄었을때 최소크기*/
+            vertical-align: middle; /*가운대 정렬*/
+        }
+        
+        .m-control .form-control {
+            width: 200px;
+            display: inline; /*인라인요소로 변경한다*/
+        }
+        /*개발자 도구에서 input-sm의 정렬을 푼다*/
+        .m-control .input-sm {
+            height: auto;
+            line-height: normal;
+        }
+        /*sel의 크기만 지정*/
+        .m-control  .sel {
+            width: 80px;
+        }
+        .m-control .add {
+            width: 400px;
+        }
+        .titlefoot {
+            text-align: center;/*인라인의 텍스트정렬 가운데*/ 
+            margin: 30px auto; /*박스의 가운데정렬*/
+            width: 50%; /*크기 50%*/
+        }
+ 	/*탈퇴버튼 디스플레이 처리 */
+	.delete-hidden {
+            display: none;
+        }
+        .delete-hidden .form-control {
+            width: 200px;
+            display: inline;
+        }
