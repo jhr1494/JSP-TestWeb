@@ -12,9 +12,6 @@ public class UpdateServiceImpl implements BoardService {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		
-		
-		
-		
 		String bno = request.getParameter("bno");
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
