@@ -30,7 +30,12 @@ public class BoradFilter2 implements Filter{
 		UserVO user = (UserVO) session.getAttribute("user");
 		
 		if(user == null) {
-			res.sendRedirect("location.href='/TestWeb/user/login.user'");
+			res.setContentType("text/html; charset=UTF-8"); //응답문서설정
+			PrintWriter out = res.getWriter();
+			out.println(" <script> ");
+			out.println(" alert('로그인이 필요한 서비스 입니다'); ");
+			out.println(" location.href='/TestWeb/user/login.user'; "); //로그인 화면
+			out.println(" </script> ");
 			return;
 		}
 		

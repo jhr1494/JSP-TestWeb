@@ -77,35 +77,12 @@ public class BoardController extends HttpServlet {
 			request.getRequestDispatcher("bbs_content.jsp").forward(request, response);
 			
 		}else if(commend.equals("/board/modify.board")) {//글 수정 화면
-			HttpSession session = request.getSession();
-			UserVO vo = (UserVO) session.getAttribute("user");
 			
-
-			if(vo == null) {
-				try {
-					response.setContentType("text/html; charset=UTF-8");
-					PrintWriter out = response.getWriter();
-					out.println("<script>");
-					out.println(" alert('로그인이 필요합니다'); ");
-					out.println(" location.href = 'user_login.jsp'; ");
-					out.println("</script>");
-//					response.sendRedirect("login.user");
-					return;
-				
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-
-			}else {
 				service = new ContentServiceImpl();
 				service.execute(request, response);
 				
 				request.getRequestDispatcher("bbs_modify.jsp").forward(request, response);
-			}
-			
-			
-			
+	
 		}else if(commend.equals("/board/modifyForm.board")) {//글 수정 요청
 			service = new UpdateServiceImpl();
 			service.execute(request, response);
